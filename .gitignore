@@ -1,0 +1,17 @@
+# 前端
+Frontend/node_modules
+Frontend/dist
+Frontend/.vite
+Frontend/.env*
+Frontend/*.log
+
+# 后端（以后SpringBoot）
+Backend/target
+Backend/.mvn
+Backend/*.log
+
+# IDE、系统文件
+.idea
+.vscode
+*.iml
+.DS_Store
