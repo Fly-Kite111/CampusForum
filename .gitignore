@@ -1,17 +1,31 @@
-# 前端
+# ========== 前端 ==========
 Frontend/node_modules
 Frontend/dist
 Frontend/.vite
 Frontend/.env*
 Frontend/*.log
 
-# 后端（以后SpringBoot）
+# ========== SpringBoot后端 ==========
 Backend/target
 Backend/.mvn
 Backend/*.log
+# 编译生成的class文件
+Backend/*.class
+# SpringBoot自动生成的临时配置、打包缓存
+Backend/.gradle
+Backend/build
+Backend/!gradle/wrapper/gradle-wrapper.jar
+# 本地开发配置（避免把数据库密码提交上去，非常重要）
+Backend/src/main/resources/application-*.yml
+Backend/src/main/resources/application-*.properties
+# 不要忽略 application.yml 主配置，只忽略本地环境配置
+!Backend/src/main/resources/application.yml
+!Backend/src/main/resources/application.properties
 
-# IDE、系统文件
+# ========== IDE、系统文件 ==========
 .idea
 .vscode
 *.iml
 .DS_Store
+# windows系统文件
+Thumbs.db
