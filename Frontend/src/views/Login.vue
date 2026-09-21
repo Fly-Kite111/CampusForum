@@ -17,10 +17,12 @@
          <el-form-item label="密码"  prop = "password">
       <el-input v-model="loginForm.password" type = "password" placeholder="请输入密码" show-password />
     </el-form-item>
-    <!-- 按钮 -->
+      <!-- 登录按钮 -->
         <el-form-item>
           <el-button type="primary" @click = "handleLogin">登 录</el-button>
         </el-form-item>
+      <!--注册-->
+        <el-button type="text" @click = "handleRegister">没有账号？请注册</el-button>
     </el-form>
          </div>
     </div>
@@ -67,6 +69,9 @@ const handleLogin = () => {
       return false
     }
   })
+}
+const handleRegister =() =>{
+  ElMessage.success('注册模块待补充！')
 }
 </script>
 
